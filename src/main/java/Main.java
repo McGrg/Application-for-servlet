@@ -17,8 +17,8 @@ public class Main {
             BufferedReader br = new BufferedReader(new InputStreamReader(urlconnection.getInputStream()));
             String s = br.readLine();
             List<ConstructionSites> parsesites = new Gson().fromJson(s, itemListType );
-            for (ConstructionSites canssite:parsesites){
-                System.out.println(canssite.toString());
+            for (ConstructionSites conssite:parsesites){
+                System.out.println(conssite.toString());
             }
         } catch (Exception e) {
             e.printStackTrace();
