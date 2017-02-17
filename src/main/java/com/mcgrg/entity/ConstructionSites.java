@@ -1,3 +1,5 @@
+package com.mcgrg.entity;
+
 /**
  * Created by MSI GT70 on 12.02.2017.
  */
@@ -68,8 +70,8 @@ public class ConstructionSites {
 
     @Override
     public String toString() {
-        return "ID: " + this.getConssiteId() + " " +  this.getConssiteCity().toString() + " "
-                + this.getConssiteStreet().toString() + " " + this.getConssiteBilding() + " "
-                + this.getStartDate() + " " + this.getFinishDate() + " " + this.getManager();
+        return "ID: " + getConssiteId() + " " +  getConssiteCity() + " "
+                + getConssiteStreet() + " " + getConssiteBilding() + " "
+                + getStartDate() + " " + getFinishDate() + " " + getManager();
     }
 }
