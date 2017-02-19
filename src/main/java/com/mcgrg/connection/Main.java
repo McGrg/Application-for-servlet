@@ -1,43 +1,40 @@
 package com.mcgrg.connection;
 
+import com.github.kevinsawicki.http.HttpRequest;
 import com.google.gson.reflect.TypeToken;
-import com.mcgrg.entity.Materials;
+import com.mcgrg.entity.Usergroups;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] a) {
 //        try {
-//            Type itemListType = new TypeToken<List<ConstructionSites>>() {
-//            }.getType();
-//            URL url = new URL("http://127.0.0.1:8080/ServletDBMySql");
-//            HttpURLConnection urlconnection = (HttpURLConnection) url.openConnection();
-//            BufferedReader br = new BufferedReader(new InputStreamReader(urlconnection.getInputStream()));
-//            String s = br.readLine();
-//            List<ConstructionSites> parsesites = new Gson().fromJson(s, itemListType);
-//            for (ConstructionSites conssite : parsesites) {
-//                System.out.println(conssite.toString());
-//            Type itemListType = new TypeToken<List<Usergroups>>() {
-//            }.getType();
-//            URL url = new URL("http://127.0.0.1:8080/ServletDBMySql");
-//            HttpURLConnection urlconnection = (HttpURLConnection) url.openConnection();
-//            List<Usergroups> parseusergroups = new Gson().fromJson(new InputStreamReader(urlconnection.getInputStream()), itemListType);
-//            for (Usergroups usergroupr : parseusergroups) {
-//                System.out.println(usergroupr.toString());
-//            }
-//            EntityListResponce<Materials> resp = new EntityListResponce<>();
-//            LinkedList<Materials> conslist = resp.getList(new TypeToken<LinkedList<Materials>>() {
+//            SelectEntityRequest ser = new SelectEntityRequest();
+//            List<Materials> materialslist = ser.setRequest(new TypeToken<List<Materials>>() {
 //            }.getType());
-//            for (Materials conssite : conslist) {
-//                System.out.println(conssite.toString());
+//            for (Materials mat : materialslist) {
+//                System.out.println(mat.toString());
 //            }
-//        } catch (Exception e) {
+//        }catch ( HttpRequest.HttpRequestException e){
 //            e.printStackTrace();
-//        }
-        EntityRequest er = new EntityRequest();
-        List<Materials> materialslist = er.setRequest(new TypeToken<List<Materials>>(){}.getType());
-        for (Materials mat :  materialslist) {
-            System.out.println(mat.toString());
+//            }
+
+
+        String columnname;
+        String value;
+        Scanner in = new Scanner(System.in);
+        System.out.print("Column name: ");
+        columnname = in.nextLine();
+        System.out.print(" value: ");
+        value = in.nextLine();
+        System.out.println(columnname + " " + value);
+        try {
+            InsertEntityRequest ier = new InsertEntityRequest();
+            ier.setRequest(new TypeToken<List<Usergroups>>() {
+            }.getType(), columnname, value);
+        } catch (HttpRequest.HttpRequestException e) {
+            e.printStackTrace();
         }
     }
 }
