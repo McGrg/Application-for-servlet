@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93e3d415-7fb7-4047-87fe-7cf780f279bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/connection/InsertEntityRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/connection/SelectEntityRequest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/connection/EntityRequest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/connection/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/connection/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -838,7 +834,7 @@
       <workItem from="1487347360787" duration="285000" />
       <workItem from="1487347657694" duration="1922000" />
       <workItem from="1487405025318" duration="22721000" />
-      <workItem from="1487489300899" duration="7682000" />
+      <workItem from="1487489300899" duration="7738000" />
     </task>
     <task id="LOCAL-00001" summary="Added Usergroups entity, Response class.">
       <created>1487332394912</created>
@@ -854,11 +850,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487442402567</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Usergroups entity, EntityResponse class - temporary, EntityRequest class using &#10;kevinsawicki http-request, Tokens&lt;T&gt;">
+      <created>1487497655749</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1487497655749</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55195000" />
+    <option name="totallyTimeSpent" value="55251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1566" height="1040" extended-state="0" />
